@@ -1,6 +1,6 @@
-import gymnasium as gym
+import gym
 import numpy as np
-from envs.wrappers.timeout import Timeout
+from envs.wrappers.time_limit import TimeLimit
 
 import mani_skill2.envs
 
@@ -74,6 +74,6 @@ def make_env(cfg):
 		render_camera_cfgs=dict(width=384, height=384),
 	)
 	env = ManiSkillWrapper(env, cfg)
-	env = Timeout(env, max_episode_steps=100)
+	env = TimeLimit(env, max_episode_steps=100)
 	env.max_episode_steps = env._max_episode_steps
 	return env
