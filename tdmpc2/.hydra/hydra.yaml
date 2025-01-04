@@ -122,13 +122,13 @@ hydra:
     - hydra.run.dir=.
     - hydra.mode=RUN
     task:
-    - task=dog-run
-    - checkpoint=checkpoints/dog-run-1.pt
+    - task=walker-run-backwards
+    - checkpoint=checkpoints/walker-run-backwards-1.pt
     - save_video=true
   job:
     name: evaluate
     chdir: null
-    override_dirname: checkpoint=checkpoints/dog-run-1.pt,save_video=true,task=dog-run
+    override_dirname: checkpoint=checkpoints/walker-run-backwards-1.pt,save_video=true,task=walker-run-backwards
     id: ???
     num: ???
     config_name: config

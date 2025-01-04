@@ -1,6 +1,6 @@
-task: dog-run
+task: walker-run-backwards
 obs: state
-checkpoint: checkpoints/dog-run-1.pt
+checkpoint: checkpoints/walker-run-backwards-1.pt
 eval_episodes: 10
 eval_freq: 50000
 steps: 10000000

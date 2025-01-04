@@ -1,3 +1,3 @@
-- task=dog-run
-- checkpoint=checkpoints/dog-run-1.pt
+- task=walker-run-backwards
+- checkpoint=checkpoints/walker-run-backwards-1.pt
 - save_video=true
